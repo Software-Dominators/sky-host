@@ -212,15 +212,12 @@ nav{
     z-index: 455;
   }
   .slider-text h1{
-    padding: 15rem ;
-  
+    /* padding: 15rem ; */
     animation: up 2s alternate infinite ease-in-out;
-
 
   
   }
 
- 
   @keyframes up{
     0%{
         transform: translateY(0);
@@ -257,32 +254,10 @@ nav{
         font-size: 1.25rem;
         
       }
-      .slider-text h1{
-        padding: 3rem ;
-        border-radius: 50%;
-        border: 3px solid var(--alt-color);
-        animation: up 2s alternate infinite ease-in-out;
-        background-color: rgba(0, 0, 0, 0.3);
-        animation: up 2s alternate infinite ease-in-out;
-      }
-  }
-  @media(min-width:400px) and (max-width:420px){
-    .slider-text h1{
-        padding: 4rem ;
      
-      
-        
-      }
   }
-  @media(min-width:768px) and (max-width:992px){
-    .slider-text h1{
-        padding: 12rem ;
-        margin-top: 2rem;
-     
-        border: 3px solid var(--alt-color);
 
-      }
-  }
+ 
   .prev-btn, .next-btn {
     position: absolute;
     top: 50%;
@@ -337,16 +312,7 @@ nav{
 
     
 }
-.banner .carousel{
-   
-    height: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-}
 
-.banner .carousel img{
-    width:100% !important;
-}
 .banner h1{
     font-size: 4rem;
 }
@@ -366,22 +332,10 @@ nav{
         /* margin-bottom: 7rem; */
         
     }
-    .banner .carousel{
-        height: 100%!important;
-    }
-    .banner .carousel img{
-        height: 100% !important;
-    
-    
-    }
+  
 
 }
-.banner .carousel-control-prev , .banner .carousel-control-next{
-    z-index: 44 !important;
-} 
- .banner .carousel-indicators{
-    z-index: 44 !important;
-}
+
 .banner img{
  opacity: 0.8;
 }
@@ -426,13 +380,35 @@ nav{
 }
 @media(max-width:567px){
     .about{
-        height: 125vh;
+        height: 155vh;
+        background-position: center;
+    
+    }
+}
+@media(min-width:399px) and (max-width:420px){
+    .about{
+        height: 115vh;
+        background-position: center;
+    
+    }
+}
+
+@media(max-width:395px){
+    .about{
+        height: 140vh;
+        background-position: center;
+    
+    }
+}
+@media(min-width:390px) and (max-width:398px){
+    .about{
+        height: 150vh;
         background-position: center;
     
     }
 }
 .about .row {
-    padding-top: 5rem !important;
+    padding-top: 3rem !important;
 }
 .about .col-lg-5{
     z-index: 22;

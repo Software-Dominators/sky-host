@@ -171,6 +171,165 @@ nav{
 }
 
 /* start-banner-section------------------------------ */
+.slider {
+   position: relative; 
+   height: 120vh;
+  
+
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .slider-content.active {
+    display: block;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+  }
+    .slider-image img{
+        opacity: 0.9;
+    }
+  .slider-text {
+    position: absolute;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+    color: #FFF;
+    z-index: 455;
+  }
+  .slider-text h1{
+    padding: 15rem ;
+  
+    animation: up 2s alternate infinite ease-in-out;
+
+
+  
+  }
+
+ 
+  @keyframes up{
+    0%{
+        transform: translateY(0);
+      
+    }
+    50%{
+        transform: translateY(-1rem);
+      
+    }
+    100%{
+        transform: translateY(0);
+     
+    }
+  }
+  @media(max-width:992px){
+    .slider{
+        width: 100%;
+        height: 100%;
+    }
+    .slider-text {
+        margin-top: -2rem;
+        width: 100%;
+        height: 100%;
+        padding:0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        color: #FFF;
+        /* padding: 1.5rem; */
+        
+      }
+      .slider-text h1{
+        font-size: 1.25rem;
+        
+      }
+      .slider-text h1{
+        padding: 3rem ;
+        border-radius: 50%;
+        border: 3px solid var(--alt-color);
+        animation: up 2s alternate infinite ease-in-out;
+        background-color: rgba(0, 0, 0, 0.3);
+        animation: up 2s alternate infinite ease-in-out;
+      }
+  }
+  @media(min-width:400px) and (max-width:420px){
+    .slider-text h1{
+        padding: 4rem ;
+     
+      
+        
+      }
+  }
+  @media(min-width:768px) and (max-width:992px){
+    .slider-text h1{
+        padding: 12rem ;
+        margin-top: 2rem;
+     
+        border: 3px solid var(--alt-color);
+
+      }
+  }
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    padding: 0 3rem;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  @media(max-width:992px){
+    .prev-btn, .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        padding: 0 1rem;
+        color: #fff;
+        opacity: 0.4;
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 6672166;
+      }
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .slider .button{
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+
 .banner{
     position: relative;
     width: 100%;
@@ -185,7 +344,9 @@ nav{
     margin: 0 !important;
 }
 
-
+.banner .carousel img{
+    width:100% !important;
+}
 .banner h1{
     font-size: 4rem;
 }
@@ -227,7 +388,7 @@ nav{
  .banner .more-btn{
     background-color: var(--main-color);
     padding: 1.25rem 4rem;
-    margin-top: 3rem;
+   
     text-decoration: none;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -235,8 +396,9 @@ nav{
 }
  .banner .more-btn:hover{
    background-color: var(--body-color) !important;
+  
 } 
- .banner .layer{
+  .layer{
   position: absolute;
   right: 0;
   top: 0;
@@ -244,7 +406,7 @@ nav{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 11;
+  /* z-index: 11; */
 }
 /* start about title section ---------------------------------- */
 .about-title{
@@ -264,7 +426,7 @@ nav{
 }
 @media(max-width:567px){
     .about{
-        height: 160vh;
+        height: 125vh;
         background-position: center;
     
     }
@@ -399,6 +561,7 @@ background-color: var(--alt-color);
 .video i{
     color: var(--alt-color);
     margin-left: 1rem;
+    font-size: 2rem;
 }
 @keyframes color{
     0%{
@@ -416,6 +579,7 @@ background-color: var(--alt-color);
 }
 .video .video-content ul {
     list-style: none;
+    margin-top: 1rem;
 }
 .video .video-content ul li{
     font-size: 1.5rem;

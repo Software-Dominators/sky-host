@@ -23,6 +23,12 @@
 <body>
 
 
+  <!-- loader div --------------------------- -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  
+
     <!-- start navbar section------------------------------------------------------>
 <nav class="navbar navbar-expand-lg mb-3 ">
     <div class="container">
@@ -67,6 +73,7 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner" data-bs-ride="carousel">
           <!-- <div class="carousel-item active">
@@ -115,9 +122,9 @@
         </button>
 
         <div class="layer d-flex justify-content-center align-items-center  flex-column  ">
-        <h1 class="text-center" data-aos="fade-up" data-aos-duration="400" date-aos-delay="500" data-aos-easing="ease-in-out" > أفضل شقة سكنية على الإطلاق <br> بادر بالحجز الأن </h1>
+        <h1 class="text-center" > أفضل شقة سكنية على الإطلاق <br> بادر بالحجز الأن </h1>
 
-        <a href="#about" class="more-btn bg-dark"  data-aos="fade-left" data-aos-duration="400" date-aos-delay="500" data-aos-easing="ease-in-out" >اقرأ المزيد</a>
+        <a href="#about" class="more-btn bg-dark"   >اقرأ المزيد</a>
 
     </div>
       </div>
@@ -127,13 +134,15 @@
     <!-- end of banner section ------------------------------------------------ -->
 
      <!-- start of about section ------------------------------------------------ -->
-
-   
+<section class="about-title">
+  <h2 class="text-center text-white"  data-aos="fade-right" data-aos-duration="400" date-aos-delay="600" data-aos-easing="ease-in-out" >عن الشقة</h2>
+</section>
+  
  <section class="about " id="about">
     <div class="container">
-      <h2 class="text-center text-white"  data-aos="fade-right" data-aos-duration="400" date-aos-delay="600" data-aos-easing="ease-in-out" >عن الشقة</h2>
-      <div class="row justify-content-between align-items-center">
-      <div class="col-lg-4"   data-aos="fade-up" data-aos-duration="400" date-aos-delay="600" data-aos-easing="ease-in-out" >
+     
+      <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5 "   data-aos="fade-up" data-aos-duration="400" date-aos-delay="600" data-aos-easing="ease-in-out" >
         <div class="about-content location shadow">
           <div class="icon">
             <i class="fa-solid fa-location-dot"></i>
@@ -157,7 +166,7 @@
   
       </div>
   
-      <div class="col-lg-4"  data-aos="fade-up" data-aos-duration="400" date-aos-delay="800" data-aos-easing="ease-in-out" >
+      <div class="col-lg-5 "  data-aos="fade-up" data-aos-duration="400" date-aos-delay="800" data-aos-easing="ease-in-out" >
         <div class="about-content sections shadow">
           <div class="icon">
             <i class="fa-solid fa-building"></i>
@@ -205,13 +214,7 @@
     <div class="container">
       <h2 class="text-center mb-5"  data-aos="fade-right" data-aos-duration="400" date-aos-delay="500" data-aos-easing="ease-in-out" > شاهد  </h2>
       <div class="row justify-content-between align-items-center">
-         <div class="col-lg-7"  data-aos="zoom-in" data-aos-duration="400" date-aos-delay="700" data-aos-easing="ease-in-out" >
-          <div class=" video-container">
-  
-            <iframe width="" height="" src="https://www.youtube.com/embed/vHAX_ExyCGo?si=Z7UjuDkok6jn-JMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="shadow" allowfullscreen></iframe>
-          </div>
-         </div>
-  
+        
          <div class="col-lg-4 ">
           <div class="video-content ">
         
@@ -249,12 +252,12 @@
                 </div>
       
       <hr>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" data-aos="fade-down" data-aos-duration="400" date-aos-delay="1400" data-aos-easing="ease-in-out" >
                   <i class="fa-solid fa-circle"></i>
                   <li> تراس علي النيل مباشرة</li>
                 </div>
       <hr>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" data-aos="fade-down" data-aos-duration="400" date-aos-delay="1600" data-aos-easing="ease-in-out" >
                   <i class="fa-solid fa-circle"></i>
                   <li> اطلاله علي مساحات خضراء</li>
                 </div>
@@ -262,6 +265,14 @@
           </div>
          </div>
       </div>
+
+      <div class="col-lg-7"  data-aos="zoom-in" data-aos-duration="400" date-aos-delay="700" data-aos-easing="ease-in-out" >
+        <div class=" video-container">
+
+          <iframe width="" height="" src="https://www.youtube.com/embed/vHAX_ExyCGo?si=Z7UjuDkok6jn-JMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="shadow" allowfullscreen></iframe>
+        </div>
+       </div>
+
     </div>
     
    
@@ -332,7 +343,7 @@
                 <div class="content w-100">
                   <div class="upper-content" class="w-75">
   
-                       <img src="assets/images/img5.jpg" alt="" class="w-100">
+                       <img src="assets/images/img4.jpg" alt="" class="w-100">
   
                   </div>
              </div>
@@ -345,7 +356,7 @@
                 <div class="content w-100">
                   <div class="upper-content" class="w-75">
   
-                       <img src="assets/images/img1.jpg" alt="" class="w-100">
+                       <img src="assets/images/img5.jpg" alt="" class="w-100">
   
                   </div>
              </div>
@@ -359,7 +370,7 @@
                 <div class="content w-100">
                   <div class="upper-content" class="w-75">
   
-                       <img src="assets/images/img1.jpg" alt="" class="w-100">
+                       <img src="assets/images/img6.jpg" alt="" class="w-100">
   
                   </div>
              </div>
@@ -418,22 +429,22 @@
         <div class="phone row justify-content-between align-items-center  w-100 ">
             <div class="col-lg-4 mb-4">
                 <div class="phone-1 d-flex align-items-center justify-content-center ">
-                  <a href="tel:01032312781">
+                  <a href="tel:+201032312781">
                     <i class="fa-solid fa-phone"></i>
                     </a>
 
                 
-                    <h4>01032312781</h4>
+                    <h4>+201032312781</h4>
                   </div>
             </div>
        
 <div class="col-lg-4">
     <div class="phone-2 d-flex align-items-center  justify-content-center">
 
-      <a href="tel:01142914292">
+      <a href="tel:+201142914292">
         <i class="fa-solid fa-phone"></i>
         </a>
-        <h4>01142914292</h4>
+        <h4>+201142914292</h4>
       </div>
 </div>
        
@@ -449,5 +460,6 @@
      </script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
